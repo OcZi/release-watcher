@@ -1,8 +1,8 @@
 # Release Watcher
-A small API to request github releases (<10 kb size).
+A small API to request github releases (<10 kb size).  
 Methods of release are inspired by python's version info.  
 
-Supports Gson as deserializer of requests (Jackson and other dependencies can be adapted).
+Supports Gson as deserializer of requests (Jackson and other libs can be adapted).
 ## Usage
 ```java
 import me.oczi.release.GithubReleases;
@@ -76,5 +76,5 @@ compileOnly('me.oczi:release-watcher-api:1.0-SNAPSHOT')
 compileOnly('me.oczi:release-watcher-gson:1.0-SNAPSHOT')
 ```
 ## Build
-JDK: Minimum 8
+JDK: Minimum 8  
 Gson: Minimum 2.2.4
