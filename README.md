@@ -17,7 +17,6 @@ class MyClass {
         );
         // Wait CompletableFuture to finish
         Release[] releases = service.requestLastRelease().join();
-        System.out.println("releases = " + Arrays.toString(releases));
         // github will return it in date order
         Release lastRelease = releases[0];
 
