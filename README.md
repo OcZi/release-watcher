@@ -2,7 +2,7 @@
 A small API to request github releases (<10 kb size).  
 Methods of release are inspired by python's version info.  
 
-Supports Gson as deserializer of requests (Jackson and other libs can be adapted).
+Supports Gson as deserializer of http requests (Jackson and other libs can be adapted).
 ## Usage
 ```java
 import me.oczi.release.GithubReleases;
@@ -17,7 +17,7 @@ class MyClass {
         );
         // Wait CompletableFuture to finish
         Release[] releases = service.requestLastRelease().join();
-        // github will return it in date order
+        // Github will return it in date order
         Release lastRelease = releases[0];
 
         // New version found?
